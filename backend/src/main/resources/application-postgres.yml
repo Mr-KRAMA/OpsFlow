@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/opsflow_db
-    username: ${DB_USER:opsflow}
-    password: ${DB_PASS:opsflow123}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/opsflow_db}
+    username: ${DATABASE_USERNAME:opsflow}
+    password: ${DATABASE_PASSWORD:opsflow123}
     driver-class-name: org.postgresql.Driver
 
   jpa:
